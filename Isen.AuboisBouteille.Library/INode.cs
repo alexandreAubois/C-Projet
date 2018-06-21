@@ -15,6 +15,8 @@ namespace Isen.AuboisBouteille.Library
         void AddNodes(IEnumerable<Node> nodeList);
         void RemoveChildNode(Guid id);
         void RemoveChildNode(Node node);
+        Node FindTraversing(Guid id);
+        Node FindTraversing(Node node);
     }
     
     

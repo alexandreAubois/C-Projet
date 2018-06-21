@@ -70,6 +70,58 @@ namespace Isen.AuboisBouteille.Library
                 }
             }
         }
+
+        public Node FindTraversing(Guid id)
+        {
+            Node resu = new Node();
+            if(children == null)
+            {
+                return null;
+            }
+            foreach (var child in children)
+            {
+                if (id == child.id)
+                {
+                    return child;
+                } 
+                else
+                {
+                    resu = child.FindTraversing(id);
+                }
+
+                if (resu != null)
+                {
+                    return resu;
+                }
+            }
+            return null;
+        }
+
+        public Node FindTraversing(Node node)
+        {
+            Node resu = new Node();
+            if(children == null)
+            {
+                return null;
+            }
+            foreach (var child in children)
+            {
+                if (node.Equals(child))
+                {
+                    return child;
+                } 
+                else
+                {
+                    resu = child.FindTraversing(node);
+                }
+
+                if (resu != null)
+                {
+                    return resu;
+                }
+            }
+            return null;
+        }
     }
 
 
