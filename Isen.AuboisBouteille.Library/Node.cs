@@ -34,6 +34,42 @@ namespace Isen.AuboisBouteille.Library
                 return ((value != null ? value.GetHashCode() : 0) * 397) ^ id.GetHashCode();
             }
         }
+
+        public void AddChildNode(Node node)
+        {
+            node.parent = this;
+            children.Add(node);
+        }
+
+        public void AddNodes(IEnumerable<Node> nodeList)
+        {
+            foreach (var myVar in nodeList)
+            {
+                AddChildNode(myVar);
+            }
+        }
+
+        public void RemoveChildNode(Guid id)
+        {
+            foreach (var myVar in children)
+            {
+                if (myVar.id == id)
+                {
+                    children.Remove(myVar);
+                }
+            }
+        }
+
+        public void RemoveChildNode(Node node)
+        {
+            foreach (var myVar in children)
+            {
+                if (node.Equals(myVar))
+                {
+                    children.Remove(myVar);
+                }
+            }
+        }
     }
 
 
