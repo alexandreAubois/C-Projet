@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24b1de5a-15cd-40f3-81c6-bd5aa591458c" name="Default" comment="" />
+    <list default="true" id="24b1de5a-15cd-40f3-81c6-bd5aa591458c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Isen.AuboisBouteille.Library/INode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Isen.AuboisBouteille.Library/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Isen.AuboisBouteille/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Isen.AuboisBouteille/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Isen.AuboisBouteille/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Isen.AuboisBouteille/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Isen.AuboisBouteille.Library/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Isen.AuboisBouteille.Library/Isen.AuboisBouteille.Library.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Isen.AuboisBouteille.Library/Isen.AuboisBouteille.Library.csproj" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,8 +16,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Node.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Isen.AuboisBouteille.Library/Node.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+              <folding>
+                <marker date="1529571884376" expanded="true" signature="6:47" ph="..." />
+                <marker date="1529571884376" expanded="true" signature="87:974" ph="{...}" />
+                <marker date="1529571884376" expanded="true" signature="127:969" ph="{...}" />
+                <marker date="1529571884376" expanded="true" signature="374:471" ph="{...}" />
+                <marker date="1529571884376" expanded="true" signature="520:757" ph="{...}" />
+                <marker date="1529571884376" expanded="true" signature="800:963" ph="{...}" />
+                <marker date="1529571884376" expanded="true" signature="832:953" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="INode.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Isen.AuboisBouteille.Library/INode.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <folding>
+                <marker date="1529571884434" expanded="true" signature="6:47" ph="..." />
+                <marker date="1529571884434" expanded="true" signature="87:321" ph="{...}" />
+                <marker date="1529571884434" expanded="true" signature="116:309" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Isen.AuboisBouteille.Library/INode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Isen.AuboisBouteille.Library/Node.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Isen.AuboisBouteille.Library/IEquatable.cs" />
+        <option value="$PROJECT_DIR$/Isen.AuboisBouteille.Library/INode.cs" />
+        <option value="$PROJECT_DIR$/Isen.AuboisBouteille.Library/Node.cs" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -97,12 +153,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529569391583</updated>
-      <workItem from="1529569392998" duration="404000" />
+      <workItem from="1529569392998" duration="2489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="404000" />
+    <option name="totallyTimeSpent" value="2489000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -115,6 +171,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" />
@@ -146,5 +203,45 @@
   <component name="UnityProjectConfiguration" isUnityUI="false" />
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Isen.AuboisBouteille.Library/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Isen.AuboisBouteille.Library/IEquatable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Isen.AuboisBouteille.Library/INode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <marker date="1529571884434" expanded="true" signature="6:47" ph="..." />
+            <marker date="1529571884434" expanded="true" signature="87:321" ph="{...}" />
+            <marker date="1529571884434" expanded="true" signature="116:309" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Isen.AuboisBouteille.Library/Node.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <marker date="1529571884376" expanded="true" signature="6:47" ph="..." />
+            <marker date="1529571884376" expanded="true" signature="87:974" ph="{...}" />
+            <marker date="1529571884376" expanded="true" signature="127:969" ph="{...}" />
+            <marker date="1529571884376" expanded="true" signature="374:471" ph="{...}" />
+            <marker date="1529571884376" expanded="true" signature="520:757" ph="{...}" />
+            <marker date="1529571884376" expanded="true" signature="800:963" ph="{...}" />
+            <marker date="1529571884376" expanded="true" signature="832:953" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
