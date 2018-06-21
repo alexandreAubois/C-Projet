@@ -1,0 +1,47 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\Marion\\Desktop\\CIR3\\semestre2\\projet C#\\Isen.AuboisBouteille\\Isen.AuboisBouteille.ConsoleApp\\Isen.AuboisBouteille.ConsoleApp.csproj",
+    "projectName": "Isen.AuboisBouteille.ConsoleApp",
+    "projectPath": "C:\\Users\\Marion\\Desktop\\CIR3\\semestre2\\projet C#\\Isen.AuboisBouteille\\Isen.AuboisBouteille.ConsoleApp\\Isen.AuboisBouteille.ConsoleApp.csproj",
+    "outputPath": "C:\\Users\\Marion\\Desktop\\CIR3\\semestre2\\projet C#\\Isen.AuboisBouteille\\Isen.AuboisBouteille.ConsoleApp\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {
+          "C:\\Users\\Marion\\Desktop\\CIR3\\semestre2\\projet C#\\Isen.AuboisBouteille\\Isen.AuboisBouteille.Library\\Isen.AuboisBouteille.Library.csproj": {
+            "projectPath": "C:\\Users\\Marion\\Desktop\\CIR3\\semestre2\\projet C#\\Isen.AuboisBouteille\\Isen.AuboisBouteille.Library\\Isen.AuboisBouteille.Library.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

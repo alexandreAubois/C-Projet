@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Isen.AuboisBouteille.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Isen.AuboisBouteille.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Isen.AuboisBouteille.Library.dll": {}
+        }
       }
     }
   },
@@ -656,10 +666,16 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Isen.AuboisBouteille.Library/1.0.0": {
+      "type": "project",
+      "path": "../Isen.AuboisBouteille.Library/Isen.AuboisBouteille.Library.csproj",
+      "msbuildProject": "../Isen.AuboisBouteille.Library/Isen.AuboisBouteille.Library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Isen.AuboisBouteille.Library >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -690,7 +706,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Marion\\Desktop\\CIR3\\semestre2\\projet C#\\Isen.AuboisBouteille\\Isen.AuboisBouteille.Library\\Isen.AuboisBouteille.Library.csproj": {
+              "projectPath": "C:\\Users\\Marion\\Desktop\\CIR3\\semestre2\\projet C#\\Isen.AuboisBouteille\\Isen.AuboisBouteille.Library\\Isen.AuboisBouteille.Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -703,6 +723,7 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
