@@ -3,20 +3,20 @@ using System.Collections.Generic;
 
 namespace Isen.AuboisBouteille.Library
 {
-    public interface INode
+    public interface INode<T>
     {
-        string value { get; set; }
+        T value { get; set; }
         Guid id { get; }
-        Node parent { get; set; }
-        List<Node> children { get; set; }
+        Node<T> parent { get; set; }
+        List<Node<T>> children { get; set; }
         int depth { get; }
 
-        void AddChildNode(Node node);
-        void AddNodes(IEnumerable<Node> nodeList);
+        void AddChildNode(Node<T> node);
+        void AddNodes(IEnumerable<Node<T>> nodeList);
         void RemoveChildNode(Guid id);
-        void RemoveChildNode(Node node);
-        Node FindTraversing(Guid id);
-        Node FindTraversing(Node node);
+        void RemoveChildNode(Node<T> node);
+        Node<T> FindTraversing(Guid id);
+        Node<T> FindTraversing(Node<T> node);
     }
     
     

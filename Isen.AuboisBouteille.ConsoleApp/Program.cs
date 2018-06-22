@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.XPath;
 using Isen.AuboisBouteille.Library;
 
 namespace Isen.AuboisBouteille.ConsoleApp
@@ -6,16 +7,16 @@ namespace Isen.AuboisBouteille.ConsoleApp
     class Program
     {
         static void Main(string[] args)
-        {    
-            Node item1 = new Node();
-            Node item11 = new Node();
-            Node item111 = new Node();
-            Node item1111 = new Node();
-            Node item112 = new Node();
-            Node item1121 = new Node();
-            Node item1122 = new Node();
-            Node item113 = new Node();
-            Node item12 = new Node();
+        {
+            var item1 = new Node<string>();
+            var item11 = new Node<string>();
+            var item111 = new Node<string>();
+            var item1111 = new Node<string>();
+            var item112 = new Node<string>();
+            var item1121 = new Node<string>();
+            var item1122 = new Node<string>();
+            var item113 = new Node<string>();
+            var item12 = new Node<string>();
             item1.value = "Item1";
             item11.value = "Item11";
             item111.value = "Item111";

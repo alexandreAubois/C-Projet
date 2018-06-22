@@ -4,25 +4,25 @@ using System.Linq;
 
 namespace Isen.AuboisBouteille.Library
 {
-    public class Node
-        : INode, IEquatable<Node>
+    public class Node<T>
+        : INode<T>, IEquatable<Node<T>>
     {
-        public string value { get; set; }
+        public T value { get; set; }
         public Guid id { get; }
-        public Node parent { get; set; }
-        public List<Node> children { get; set; }
+        public Node<T> parent { get; set; }
+        public List<Node<T>> children { get; set; }
 
         public int depth => parent?.depth + 1 ?? 0;
 
         public Node()
         {
-            children = new List<Node>();
+            children = new List<Node<T>>();
             id = new Guid();
             parent = null;
-            value = null;
+            value = default(T);
         }    
 
-        public bool Equals(Node other)
+        public bool Equals(Node<T> other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
@@ -34,7 +34,7 @@ namespace Isen.AuboisBouteille.Library
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((Node) obj);
+            return Equals((Node<T>) obj);
         }
 
         public override int GetHashCode()
@@ -45,13 +45,13 @@ namespace Isen.AuboisBouteille.Library
             }
         }
 
-        public void AddChildNode(Node node)
+        public void AddChildNode(Node<T> node)
         {
             node.parent = this;
             children.Add(node);
         }
 
-        public void AddNodes(IEnumerable<Node> nodeList)
+        public void AddNodes(IEnumerable<Node<T>> nodeList)
         {
             foreach (var myVar in nodeList)
             {
@@ -70,7 +70,7 @@ namespace Isen.AuboisBouteille.Library
             }
         }
 
-        public void RemoveChildNode(Node node)
+        public void RemoveChildNode(Node<T> node)
         {
             foreach (var myVar in children.ToList())
             {
@@ -81,9 +81,9 @@ namespace Isen.AuboisBouteille.Library
             }
         }
 
-        public Node FindTraversing(Guid id)
+        public Node<T> FindTraversing(Guid id)
         {
-            Node resu = new Node();
+            Node<T> resu = new Node<T>();
             if(children == null)
             {
                 return null;
@@ -107,9 +107,9 @@ namespace Isen.AuboisBouteille.Library
             return null;
         }
 
-        public Node FindTraversing(Node node)
+        public Node<T> FindTraversing(Node<T> node)
         {
-            Node resu = new Node();
+            Node<T> resu = new Node<T>();
             if(children == null)
             {
                 return null;
