@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Xml.XPath;
 using Isen.AuboisBouteille.Library;
+using Newtonsoft.Json.Linq;
 
 namespace Isen.AuboisBouteille.ConsoleApp
 {
@@ -8,6 +9,7 @@ namespace Isen.AuboisBouteille.ConsoleApp
     {
         static void Main(string[] args)
         {
+            //Question 5
             var item1 = new Node<string>();
             var item11 = new Node<string>();
             var item111 = new Node<string>();
@@ -35,8 +37,16 @@ namespace Isen.AuboisBouteille.ConsoleApp
             item11.AddChildNode(item113);
             item1.AddChildNode(item12);
             item1.ToString();
-            //item11.AddChildNode(item);
-          
+
+            //Question 7
+            //Sérialization
+            Console.WriteLine(item1.SerializeJson().ToString());
+            //Deserialization
+            JObject json = item1.SerializeJson();
+            var resu = new Node<string>();
+            resu.DeserializeJson(json);           
+            Console.WriteLine(resu.ToString());
+
         }
     }
 }

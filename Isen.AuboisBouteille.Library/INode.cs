@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 
 namespace Isen.AuboisBouteille.Library
 {
@@ -17,6 +18,8 @@ namespace Isen.AuboisBouteille.Library
         void RemoveChildNode(Node<T> node);
         Node<T> FindTraversing(Guid id);
         Node<T> FindTraversing(Node<T> node);
+        JObject SerializeJson();
+        void DeserializeJson(JToken json);
     }
     
     
