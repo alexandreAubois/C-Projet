@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Isen.AuboisBouteille.Library
 {
@@ -10,7 +11,16 @@ namespace Isen.AuboisBouteille.Library
         public Guid id { get; }
         public Node parent { get; set; }
         public List<Node> children { get; set; }
-        public int depth { get; }
+
+        public int depth => parent?.depth + 1 ?? 0;
+
+        public Node()
+        {
+            children = new List<Node>();
+            id = new Guid();
+            parent = null;
+            value = null;
+        }    
 
         public bool Equals(Node other)
         {
@@ -51,7 +61,7 @@ namespace Isen.AuboisBouteille.Library
 
         public void RemoveChildNode(Guid id)
         {
-            foreach (var myVar in children)
+            foreach (var myVar in children.ToList())
             {
                 if (myVar.id == id)
                 {
@@ -62,7 +72,7 @@ namespace Isen.AuboisBouteille.Library
 
         public void RemoveChildNode(Node node)
         {
-            foreach (var myVar in children)
+            foreach (var myVar in children.ToList())
             {
                 if (node.Equals(myVar))
                 {
@@ -122,6 +132,26 @@ namespace Isen.AuboisBouteille.Library
             }
             return null;
         }
+
+        public override string ToString()
+        {
+            for (int i = 0; i < depth; i++)
+            {
+                Console.Write("|-");
+            }
+            Console.Write(value);
+            Console.WriteLine("{" + id + "}");
+            foreach (var child in children)
+            {
+                if (children != null)
+                {
+                    child.ToString();
+
+                }
+            }
+            return base.ToString();
+        }
+
     }
 
 
